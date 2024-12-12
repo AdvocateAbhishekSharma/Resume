@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abhishek Sharma | Advocate</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    /* Hero Section */
+    #home {
+      background: url('images/profile.jpg') no-repeat center center/cover;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    #home::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    #home .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    #home img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+    }
+
+    #home h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    #home p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Section Headings */
+    section h2 {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 10px;
+      margin-bottom: 40px;
+    }
+
+    section h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background-color: #007bff;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 60px 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    /* Custom Buttons */
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    /* Contact Form */
+    .contact-form .form-control {
+      border-radius: 0;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      #home h1 {
+        font-size: 2.5rem;
+      }
+
+      #home p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Abhishek Sharma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#personal">Personal</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container text-center text-white">
+      <img src="images/profile.jpg" alt="Abhishek Sharma">
+      <h1>Abhishek Sharma</h1>
+      <p>Associate Advocate at Chambers of Vishal Gupta</p>
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I'm Abhishek Sharma, an Associate Advocate based in Ludhiana, Punjab. With a solid educational background in law and extensive professional experience, I specialize in various legal domains including telecommunication disputes, motor vehicle claims, NDPS, matrimonial disputes, consumer protection, labor law disputes, and human rights violations. My goal is to uphold justice and advocate for human rights, ensuring fairness and equality in the legal system.</p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="bg-light">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h4>B.Com.LL.B (Honours)</h4>
+          <p><strong>2016 - 2021</strong></p>
+          <p>University Institute of Legal Studies (UILS), Chandigarh University, Gharuan, SAS Nagar, Punjab, India</p>
+          <p><strong>CGPA:</strong> 8.28/10</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h4>Senior Secondary (Class 12)</h4>
+          <p><strong>2016</strong></p>
+          <p>CBSE Board</p>
+          <p><strong>Percentage:</strong> 74%</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h4>Secondary (Class 10)</h4>
+          <p><strong>2014</strong></p>
+          <p>CBSE Board</p>
+          <p><strong>CGPA:</strong> 9.0</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Associate Advocate</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Chambers of Vishal Gupta | Tricity (Chandigarh, Mohali, Panchkula)</h6>
+          <p><strong>08/2022 – 12/2024</strong></p>
+          <ul>
+            <li>Assisted in litigation and case preparation for matters spanning diverse areas of law, including telecommunication disputes, motor vehicle claims, NDPS, matrimonial disputes, consumer protection, labor law disputes, and human rights violations.</li>
+            <li>Drafted and reviewed legal documents such as writ petitions, appeals, affidavits, and contracts across multiple jurisdictions.</li>
+            <li>Conducted in-depth legal research to strengthen case arguments and ensure compliance with applicable laws and precedents.</li>
+            <li>Represented clients in pre-trial hearings, settlement negotiations, and mediation proceedings.</li>
+            <li>Supported the senior advocate in landmark cases and complex litigation involving constitutional law, environmental disputes, real estate, and corporate matters.</li>
+            <li>Built expertise in tribunal proceedings, including motor accident claims tribunals (MACT), consumer forums, and labor courts.</li>
+            <li>Maintained a high level of client engagement, providing legal advice and ensuring transparent communication throughout the litigation process.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Add more experience entries here if needed -->
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="bg-light">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h4>Legal Research and Drafting Tools</h4>
+          <ul>
+            <li>Legal Drafting: Proficient in drafting writ petitions, affidavits, contracts, legal notices, and agreements.</li>
+            <li>Legal Research Tools: Comprehensive expertise in navigating case laws, statutes, and legislative histories using tools like LexisNexis and Westlaw.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h4>Technology and Computer Proficiency</h4>
+          <ul>
+            <li>Office Suite: Advanced proficiency in MS Word, Excel (basic data organization), and PowerPoint for creating legal documentation and presentations.</li>
+            <li>Online Research Platforms: Experienced with search engines like Law Finder, JSTOR, HeinOnline, and Google Scholar for academic and legal research.</li>
+            <li>Document Handling: Skilled in formatting, proofreading, and preparing case files and court documents using Adobe Acrobat and MS Office.</li>
+            <li>AI Integration: Efficient in utilizing AI tools like ChatGPT, Dragon NaturallySpeaking for legal research, contract analysis, and drafting assistance to enhance accuracy and efficiency.</li>
+            <li>E-Filing: Proficient in e-filing procedures for High Courts and tribunals in India.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h4>Special Legal Skills</h4>
+          <ul>
+            <li>Legal Documentation: Skilled in maintaining accurate client records, case briefs, and case logs.</li>
+            <li>Client Interaction: Experience in gathering case details, preparing statements, and explaining legal procedures.</li>
+            <li>Professional Networking: Proficient in using professional tools like CaseMine and LinkedIn.</li>
+            <li>Virtual Hearing Platforms: Adept in using video conferencing tools like Cisco Webex, Zoom, and MS Teams for court appearances and client meetings.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications">
+    <div class="container">
+      <h2>Publications and Papers</h2>
+      <ul>
+        <li>Contributed articles to legal magazines and college journals on topics like “Judicial Reforms in India”, "Right to Health vs Digital India", and “Pre-nuptial Agreements.”</li>
+        <li>Drafted legal opinion pieces in college on policy reforms and their implications for justice delivery systems.</li>
+        <li>Published poetry and creative writing pieces in literary forums, reflecting strong writing and analytical skills.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="bg-light">
+    <div class="container">
+      <h2>Scholastic & Extra-Curricular Achievements</h2>
+      <ul>
+        <li>Consistently ranked among the top performers in academic semesters during college and in school.</li>
+        <li>Awarded multiple prizes for Excellence in Academics and Proficiency in Language Skills.</li>
+        <li>City-level Winner and participant in prestigious quiz contests, including Bournvita Quiz Contest and Vodafone Talent Hunt.</li>
+        <li>Winner of several Poetry Competitions, Debates, and Group Discussions at inter-school and city levels.</li>
+        <li>Recognized as Best Orator in intra-school and district-level debates and elocution competitions.</li>
+        <li>Published poetry in college magazines and local literary forums, showcasing creative writing talent.</li>
+        <li>Member of the college Moot Court Team, securing accolades in intra-university moot court competitions.</li>
+        <li>Held leadership roles as School House Captain and Class Representative, fostering team spirit and organizational skills.</li>
+        <li>Successfully led and participated in case analysis competitions during legal workshops and training programs.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Personal Activities Section -->
+  <section id="personal">
+    <div class="container">
+      <h2>Personal Activities</h2>
+      <p><strong>Date of Birth:</strong> 27th June 1998</p>
+      <p><strong>Languages Known:</strong> English, Hindi, Punjabi, and French</p>
+      <h4>Hobbies and Interests:</h4>
+      <ul>
+        <li>Playing virtual games and exploring emerging gaming technologies</li>
+        <li>Participating in modeling and fitness activities</li>
+        <li>Playing cricket, badminton, and actively engaging in team sports</li>
+        <li>Reading fiction and exploring contemporary literature</li>
+        <li>Creating content for YouTube, focusing on infotainment and social awareness</li>
+      </ul>
+      <h4>Goals and Ambitions:</h4>
+      <ul>
+        <li>To excel in the field of law and secure a position in the judiciary, upholding the principles of justice and equality.</li>
+        <li>Honoring family values and working hard to make grandparents proud by upholding kindness, compassion, and integrity in personal and professional life.</li>
+        <li>Advocating for human rights, justice, and equality in the legal system.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h5>Contact Information</h5>
+          <p><strong>Location:</strong> Ludhiana (141001), Punjab, India</p>
+          <p><strong>Contact No.:</strong> +91-8968773557</p>
+          <p><strong>E-mail:</strong> <a href="mailto:the.advabhishek@gmail.com">the.advabhishek@gmail.com</a></p>
+          <p><strong>Bar Enrollment No:</strong> PH/4526/2021</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>Send a Message</h5>
+          <form action="https://formspree.io/f/mnqkpepy" method="POST" class="contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" name="_replyto" required placeholder="your.email@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" name="message" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2024 Abhishek Sharma. All Rights Reserved.</p>
+      <div>
+        <a href="https://linkedin.com/in/abhishek-sharma" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://github.com/abhishek-sharma" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://twitter.com/abhisheksharma" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        <!-- Add more social links as needed -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script>
+    // Example: Alert on form submission (optional)
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.querySelector('.contact-form');
+      form.addEventListener('submit', (e) => {
+        // Optionally, you can show a custom message or use a modal
+        alert('Thank you for reaching out! I will get back to you soon.');
+      });
+    });
+  </script>
+</body>
+</html>
