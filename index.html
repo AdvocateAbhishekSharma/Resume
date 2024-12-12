@@ -60,15 +60,34 @@
     }
     
    /* Hero Section */
+/* Hero Section */
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('indianlaw.jpeg') no-repeat center center/cover;
+  /* 
+    Apply a linear gradient for overlay effect.
+    Then set the background image to indianlaw.jpeg.
+    Adjust the path to the image based on its actual location.
+  */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('home.jpg') no-repeat center center;
+  
+  /* Ensure the background covers the entire section */
+  background-size: cover;
+
+  /* Set the height to full viewport height */
   height: 100vh;
+
+  /* Flexbox settings to center content vertically */
   display: flex;
   align-items: center;
+
+  /* Text color */
   color: #fff;
+
+  /* Positioning */
   position: relative;
 }
+
 
     
     #home::before {
